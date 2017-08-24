@@ -1,0 +1,39 @@
+{
+  "name": "playground",
+  "version": "1.6.0",
+  "private": true,
+  "dependencies": {
+    "history": "^4.6.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-data-structures": "^0.1.6",
+    "redux-first-router": "^1.9.18",
+    "redux-first-router-link": "^1.2.0",
+    "redux-saga": "^0.15.4",
+    "styled-components": "^2.1.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^1.0.11",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ react-scripts start",
+    "build": "NODE_PATH=src/ react-scripts build",
+    "test": "NODE_PATH=src/ react-scripts test --env=jsdom",
+    "lint": "standard --fix || true",
+    "coverage": "yarn test -- --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!node_modules/",
+      "!src/state/store.js",
+      "!src/state/sagas/*",
+      "!src/index.js",
+      "!src/registerServiceWorker.js"
+    ]
+  }
+}
