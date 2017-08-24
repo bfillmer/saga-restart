@@ -1,9 +1,7 @@
 
-# Playground
+# Saga Restart
 
-General React playground for experimenting with new things.
-
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+A quick prototype of leveraging a higher-order function to wrap sagas that should continue to retry their tasks even if said task throws an error. See `src/state/sagas/home.js` for the bulk of the code around this.
 
 ## Overview
 
@@ -13,6 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * `redux-first-router` (https://github.com/faceyspacey/redux-first-router)
 * `redux-saga` (https://redux-saga.js.org/)
 * `redux-actions` (https://github.com/acdlite/redux-actions)
+* `redux-data-structures` (https://redux-data-structures.js.org/)
 
 ## Notes on Routing
 
